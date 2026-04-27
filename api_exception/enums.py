@@ -25,23 +25,23 @@ class BaseExceptionCode(Enum):
 
     @property
     def error_code(self):
-        return self.value[0]
+        pass
 
     @property
     def message(self):
-        return self.value[1]
+        pass
 
     @property
     def description(self):
-        return self.value[2] if len(self.value) > 2 else ""
+        pass
 
     @property
     def rfc7807_type(self):
-        return self.value[3] if len(self.value) > 3 else ""
+        pass
 
     @property
     def rfc7807_instance(self):
-        return self.value[4] if len(self.value) > 4 else ""
+        pass
 
 class ExceptionCode(BaseExceptionCode):
     """
